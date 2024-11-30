@@ -1,27 +1,45 @@
-.. OSSW24_Team6 documentation master file, created by
-   sphinx-quickstart on Sat Nov 30 22:45:54 2024.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+Frequently Asked Questions
+========================
 
-Welcome to OSSW24_Team6 documentation
-==========================
+General Questions
+---------------
 
-Add your content using ``reStructuredText`` syntax. See the
-`reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
-documentation for details.
+How do I start the project?
+^^^^^^^^^^^^^^^^^^^^^^^^^
+To start the project, follow these steps:
 
+1. Install required dependencies
+2. Configure your environment
+3. Run the initialization script
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+Why am I getting an error XYZ?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Common causes for this error:
 
-   about
-   getting_started
-   usage
-   technical_overview
-   api_reference
-   configuration
-   maintenance
-   contributing
-   faq
-   release_notes
+* Incorrect configuration
+* Missing dependencies
+* Permission issues
+
+Installation Issues
+-----------------
+
+Missing Dependencies
+^^^^^^^^^^^^^^^^^
+Q: What should I do if I'm missing dependencies?
+
+A: Run the following command:
+
+.. code-block:: bash
+
+   pip install -r requirements.txt
+
+Version Conflicts
+^^^^^^^^^^^^^^^
+Q: How do I resolve version conflicts?
+
+A: Try creating a new virtual environment:
+
+.. code-block:: bash
+
+   python -m venv new_env
+   source new_env/bin/activate
