@@ -3,8 +3,8 @@ About the Project
 
 Overview
 --------
-[Your project overview here]
+ReadTheDocs
 
 Features
 --------
-[Your features here]
+
