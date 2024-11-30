@@ -1,27 +1,53 @@
-.. OSSW24_Team6 documentation master file, created by
-   sphinx-quickstart on Sat Nov 30 22:45:54 2024.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+API Reference
+============
 
-Welcome to OSSW24_Team6 documentation
-==========================
+Core Functions
+-------------
 
-Add your content using ``reStructuredText`` syntax. See the
-`reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
-documentation for details.
+Database Operations
+^^^^^^^^^^^^^^^^^
 
+.. code-block:: python
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+    def connect_database(host: str, port: int) -> Connection:
+        """
+        Establish database connection.
+        
+        Args:
+            host (str): Database host address
+            port (int): Port number
+            
+        Returns:
+            Connection: Database connection object
+        """
+        # Implementation details
 
-   about
-   getting_started
-   usage
-   technical_overview
-   api_reference
-   configuration
-   maintenance
-   contributing
-   faq
-   release_notes
+Authentication
+^^^^^^^^^^^^^
+
+.. code-block:: python
+
+    def authenticate_user(username: str, password: str) -> bool:
+        """
+        Authenticate user credentials.
+        
+        Args:
+            username (str): User's username
+            password (str): User's password
+            
+        Returns:
+            bool: Authentication status
+        """
+        # Implementation details
+
+Error Codes
+----------
+
+=======  ================================
+Code     Description
+=======  ================================
+1001     Database connection failed
+1002     Authentication failed
+1003     Invalid input parameters
+1004     Resource not found
+=======  ================================
