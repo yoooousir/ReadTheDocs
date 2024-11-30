@@ -1,27 +1,36 @@
-.. OSSW24_Team6 documentation master file, created by
-   sphinx-quickstart on Sat Nov 30 22:45:54 2024.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+Maintenance
+==========
 
-Welcome to OSSW24_Team6 documentation
-==========================
+Documentation Updates
+-------------------
 
-Add your content using ``reStructuredText`` syntax. See the
-`reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
-documentation for details.
+Regular Updates
+^^^^^^^^^^^^^
+* Review documentation monthly
+* Update version numbers
+* Check for broken links
+* Verify code examples
+* Update screenshots if needed
 
+Version Control
+-------------
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+Git Commands
+^^^^^^^^^^
+.. code-block:: bash
 
-   about
-   getting_started
-   usage
-   technical_overview
-   api_reference
-   configuration
-   maintenance
-   contributing
-   faq
-   release_notes
+    # Update documentation
+    git add .
+    git commit -m "Update documentation: [describe changes]"
+    git push origin main
+
+Build Verification
+----------------
+
+Always test your documentation locally before pushing:
+
+.. code-block:: bash
+
+    make clean
+    make html
+    # Check _build/html/index.html in your browser
