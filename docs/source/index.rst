@@ -1,4 +1,4 @@
-Welcome to OSSW24_Team6 documentation
+Welcome to OSSW24_Team6 Documentation
 ===================================
 
 .. toctree::
@@ -15,3 +15,28 @@ Welcome to OSSW24_Team6 documentation
    contributing
    faq
    release_notes
+
+Introduction
+-----------
+
+Welcome to the documentation for OSSW24_Team6 project. This documentation provides comprehensive information about installation, usage, and contribution guidelines.
+
+Quick Start
+----------
+
+   .. code-block:: bash
+
+      git clone https://github.com/yoooousir/ReadTheDocs.git
+      cd ReadTheDocs
+      python -m venv docs_env
+      source docs_env/bin/activate  # Windows: docs_env\Scripts\activate
+      pip install -r docs/requirements.txt
+
+Getting Help
+-----------
+
+If you need help, you can:
+
+* Check the :doc:`faq`
+* Submit an issue on GitHub
+* Contact the development team
