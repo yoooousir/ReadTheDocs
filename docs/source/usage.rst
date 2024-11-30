@@ -1,27 +1,40 @@
-.. OSSW24_Team6 documentation master file, created by
-   sphinx-quickstart on Sat Nov 30 22:45:54 2024.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+Usage
+=====
 
-Welcome to OSSW24_Team6 documentation
-==========================
+Building Documentation
+--------------------
 
-Add your content using ``reStructuredText`` syntax. See the
-`reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
-documentation for details.
+To build the documentation:
 
+1. Activate your virtual environment:
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+   .. code-block:: bash
 
-   about
-   getting_started
-   usage
-   technical_overview
-   api_reference
-   configuration
-   maintenance
-   contributing
-   faq
-   release_notes
+      source docs_env/bin/activate  # On Windows: docs_env\Scripts\activate
+
+2. Navigate to the docs directory:
+
+   .. code-block:: bash
+
+      cd docs
+
+3. Build the HTML:
+
+   .. code-block:: bash
+
+      make html
+
+The built documentation will be in ``_build/html/``.
+
+Updating Documentation
+--------------------
+
+1. Edit the relevant .rst files
+2. Rebuild the documentation:
+
+   .. code-block:: bash
+
+      make clean
+      make html
+
+3. View your changes in ``_build/html/index.html``
