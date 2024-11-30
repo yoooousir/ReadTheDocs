@@ -1,27 +1,42 @@
-.. OSSW24_Team6 documentation master file, created by
-   sphinx-quickstart on Sat Nov 30 22:45:54 2024.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+Configuration
+============
 
-Welcome to OSSW24_Team6 documentation
-==========================
+File Structure
+-------------
 
-Add your content using ``reStructuredText`` syntax. See the
-`reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
-documentation for details.
+The documentation project has the following structure::
 
+    docs/
+    ├── source/
+    │   ├── conf.py
+    │   ├── index.rst
+    │   ├── about.rst
+    │   └── ...
+    ├── Makefile
+    └── make.bat
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+Configuration Options
+-------------------
 
-   about
-   getting_started
-   usage
-   technical_overview
-   api_reference
-   configuration
-   maintenance
-   contributing
-   faq
-   release_notes
+In ``conf.py``, you can configure:
+
+Theme Settings
+^^^^^^^^^^^^^
+.. code-block:: python
+
+    html_theme = 'sphinx_rtd_theme'
+    html_theme_options = {
+        'navigation_depth': 4,
+        'collapse_navigation': False,
+        'sticky_navigation': True
+    }
+
+Project Information
+^^^^^^^^^^^^^^^^^
+.. code-block:: python
+
+    project = 'OSSW24_Team6'
+    copyright = '2024, Your Name'
+    author = 'Your Name'
+    version = '0.1'
+    release = '0.1.0'
